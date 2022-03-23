@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<title>5K Run Registration</title>
+		<style type="text/css">
+			h1 { color:  red ; }
+			h2 { font-family: Times New Roman; color: blue ; }
+			p { font-family: Ariel; color: green} 
+			input[type=submit] {
+  				background-color: #4CAF50; /* Green */
+  				border: none;
+  				color: white;
+  				padding: 20px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 12px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+			}
+		</style>
+	</head>
+      <body>
+            <h1>5K Runner Registration</h1>
+            <h2>Please complete ALL fields. Please note the required format of information.</h2>
+            <div>
+                  <form method="post" action="5krun.php">
+                        <p>First Nmae: &nbsp;
+			<input type="text" name="first_name" id='first_name"></p> 
+                        <p>Last Nmae: &nbsp;
+			<input type="text" name="last_name" id="last_name"></p> 
+                        <p>Address: &nbsp;
+			<input type="text" name="address" id="address"></p> 
+			<!-- Create text fields to collect city, state, and zipcodes -->
+                        <p>Your Age (numeric onl, must be 12 years old): &nbsp
+			<input type="number" min="12" name="age" id="age"></p>
+                        <p>T-Shirt Size: &nbsp; 
+                        <select name="size" id="size">
+				<option>Add more options</option>
+				<option>L</option>
+			</select></p>
+                        <input type="submit" value="Click to convert" />
+                  </form>
+            </div>
+      </body>
+</html>
